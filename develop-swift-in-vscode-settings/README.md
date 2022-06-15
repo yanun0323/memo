@@ -2,13 +2,12 @@
 
 ####安裝VSCode Extension
 
-
 - <B>Swift</B>
     \- apple 開發者維護的Extension(Swift Server Work Group)
 + <B>Clang-Format</B>
     \- 編譯 swift 使用
 - <B>apple-swift-format</B>
-
+    \- swift 自動 format 功能
     ```
     安裝流程
     1. 安裝 Xcode
@@ -24,6 +23,12 @@
        將 apple/swift-format 的路徑貼上去
     7. 完成！在任何 .swift 檔案案儲存就會自動format了
     ```
+
+
+####source
+- https://github.com/vknabel/vscode-apple-swift-format
+- https://github.com/yonaskolb/Mint
+- https://github.com/apple/swift-format/tree/release/5.7
 
 
 
