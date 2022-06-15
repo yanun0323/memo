@@ -1,9 +1,9 @@
 # 在 VSCode 設置 Swift 開發環境
-紀錄如何在VSCode上設置Swift的開發所需環境
+紀錄如何在 VSCode 上設置 Swift 開發所需的環境
 
 ## 安裝VSCode Extension
 
-- [**Swift**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple開發者維護的Extension(Swift Server Work Group)
+- [**Swift**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple 開發者維護的 extension(Swift Server Work Group)
 - [**apple-swift-format**](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-apple-swift-format) - swift 自動 format 功能
 - (選擇) [**Clang-Format**](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) - 編譯swift使用
 
