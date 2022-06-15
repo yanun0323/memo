@@ -4,7 +4,7 @@
 
 ## 安裝 VSCode Extension
 
-- [**Swift**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple 開發者維護的 extension(Swift Server Work Group)
+- [**Swift**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple 開發者維護的 extension
 - [**apple-swift-format**](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-apple-swift-format) - swift 自動 format 功能
 
 - (選擇) [**Android iOS Emulator**](https://marketplace.visualstudio.com/items?itemName=DiemasMichiels.emulate) - 運行模擬器用
