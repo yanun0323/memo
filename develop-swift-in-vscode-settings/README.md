@@ -3,7 +3,7 @@
 
 ## 安裝VSCode Extension
 
-- [**Swift**](#https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple開發者維護的Extension(Swift Server Work Group)
+- [**Swift**](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - apple開發者維護的Extension(Swift Server Work Group)
 - [**apple-swift-format**](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-apple-swift-format) - swift 自動 format 功能
 - (選擇) [**Clang-Format**](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) - 編譯swift使用
 
