@@ -1,14 +1,12 @@
 package main
 
-type MyDuck struct {
-	Duck
+type Duck struct {
 	QuarkBehavior QuarkBehavior
 	FlyBehavior   FlyBehavior
 }
 
-// Duck Abstract
-type Duck interface {
-	Display()
+func (d *Duck) Display() {
+
 }
 
 // Behavior interface
@@ -16,7 +14,7 @@ type QuarkBehavior interface {
 	Quark()
 }
 
-// Behavior interfacev
+// Behavior interface
 type FlyBehavior interface {
 	Fly()
 }
