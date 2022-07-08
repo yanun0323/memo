@@ -38,7 +38,7 @@ __Text__
 Sample `code`
 
 
-```C
+```go
 int Hello(){
     return 0
 }
