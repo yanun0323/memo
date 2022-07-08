@@ -57,7 +57,7 @@ Separator
 
 [Title3](#Title3)
 
-![Image](./封面測試.png)
+![Image](./asset/封面測試.png)
 
 [1]: https://www.google.com "google"
 [Link3]: https://www.google.com "google"
