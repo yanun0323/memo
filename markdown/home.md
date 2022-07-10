@@ -1,4 +1,4 @@
-# Yanun Yang Site
+# Home
 
 這是一個以 [golang] [echo] 為基底的 [open source] 的 [markdown] 伺服器網站
 
