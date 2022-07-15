@@ -42,7 +42,7 @@ ol {
 }
 
 blockquote {
-    font-size: 20px;
+    font-size: 16px;
     color: #666661;
     border-left: 4px var(--quote-shadow) solid;
     padding-left: 30px;
