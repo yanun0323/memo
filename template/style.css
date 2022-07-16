@@ -141,6 +141,7 @@ button {
 
 .sidebar-button {
     opacity: 1;
+    /* display: none; */
 }
 
 .sidebar-button-medium {
@@ -165,7 +166,6 @@ button {
 
 
 .sidebar-category {
-    display: none;
     background-color: transparent;
 
     font-size: 15px;
