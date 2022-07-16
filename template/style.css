@@ -118,7 +118,7 @@ button {
 }
 
 
-.sidebar {
+.sidebar-base {
     transition-duration: 0.3s;
 
     position: fixed;
@@ -131,7 +131,7 @@ button {
     opacity: 0;
 }
 
-.sidebar:hover {
+.sidebar-base:hover {
     left: 0px;
     opacity: 0.95;
 }
