@@ -167,7 +167,7 @@ button {
 
 
 .sidebar-category {
-    display: block;
+    display: none;
     background-color: transparent;
 
     height: 25px;
