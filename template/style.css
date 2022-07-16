@@ -170,6 +170,10 @@ button {
     font-size: 16px;
     height: 25px;
     margin: 15px 0 5px 45px;
+    padding: 0 20px;
+
+    border-left: #cfcfcf 2px solid;
+    background-color: #efefef;
 
     transition: 0.6s;
 }
