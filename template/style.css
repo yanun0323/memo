@@ -89,11 +89,11 @@ td {
     background-color: var(--block-shadow);
 }
 
-button {
+/* button {
     display: block;
     background-color: transparent;
     border: 1px transparent solid;
-}
+} */
 
 .trigger {
     transition: 0.5s;
@@ -146,15 +146,13 @@ button {
 }
 
 .sidebar-button-medium {
-    height: 40px;
     font-size: 30px;
     margin: 10px 0 10px 10%;
 }
 
 .sidebar-button-small {
-    height: 25px;
-    padding: 5px 0 0 0;
     font-size: 15px;
+    padding: 5px 0 0 0;
     margin: 5px 0 5px 10%;
 }
 
@@ -170,9 +168,8 @@ button {
     display: none;
     background-color: transparent;
 
-    height: 25px;
-    padding: 5px 0 0 0;
     font-size: 15px;
+    padding: 5px 0 0 0;
     margin: 5px 20%;
 
     transition: 0.6s;
