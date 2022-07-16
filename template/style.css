@@ -175,7 +175,3 @@ button {
     font-size: 15px;
     margin: 5px 20%;
 }
-
-.sidebar-category:hover {
-    opacity: 0.5;
-}
