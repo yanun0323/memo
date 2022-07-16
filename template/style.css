@@ -158,9 +158,24 @@ button {
     margin: 5px 20%;
 }
 
-
-
 .sidebar-button:hover {
     opacity: 0.5;
     border-bottom: 1px gray solid;
+}
+
+
+
+
+.sidebar-category {
+    display: block;
+    background-color: transparent;
+
+    height: 25px;
+    padding: 5px 0 0 0;
+    font-size: 15px;
+    margin: 5px 20%;
+}
+
+.sidebar-category:hover {
+    opacity: 0.5;
 }
