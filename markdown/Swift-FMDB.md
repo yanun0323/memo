@@ -2,7 +2,10 @@
 
 在 Swift 專案中使用
 
+0. Clone the FMDB project from the Github.
+>  將 FMDB 從 Github 上拉下來
 1. Copy the relevant .m and .h files from the FMDB src folder into your project.
+> 複製 `FMDB/src` 資料夾內所有 `.m` / `.h` 檔案到你的專案內
 
 2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging header, add one.
 
