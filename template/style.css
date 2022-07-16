@@ -140,9 +140,7 @@ button {
 
 
 .sidebar-button {
-    display: block;
-    background-color: transparent;
-    border: 1px transparent solid;
+    opacity: 1;
 }
 
 .sidebar-button-medium {
