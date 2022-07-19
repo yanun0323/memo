@@ -179,7 +179,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "keypad_equal_sign"
+                                        "key_code": "equal_sign"
                                     }
                                 ],
                                 "type": "basic"
@@ -466,7 +466,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "keypad_9"
+                                        "key_code": "9"
                                     }
                                 ],
                                 "type": "basic"
