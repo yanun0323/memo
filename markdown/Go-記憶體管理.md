@@ -39,3 +39,51 @@ If a variable has its address taken, that variable is a candidate for allocation
 ## 記憶體管理
 
 記憶體管理包含三個部分 : `Mutator` `Allocator` `Collector`
+
+![Image](./asset/go-memory/1.png)
+
+> `Mutator` 向 `Allocator` 申請記憶體
+>
+> `Allocator` 在 Heap 中初始化相對應的記憶體
+>
+> `Collector` 管理及回收記憶體
+
+// TODO: Collector？？
+
+## Allocator 設計原理
+
+常見的 Allocator 有兩種類型
+- Bump Allocator (Sequential Allocator)
+- Free-List Allocator
+
+### Bump Allocator
+Bump Allocator 使用一種非常高效能的記憶體分配方式，
+他使用一個指針指向特定記憶體位置。
+當程式申請記憶體時，他檢查指針後的剩餘記憶體空間，分配一段記憶體空間出去，
+接著移動指針到分配過的記憶體尾端。
+
+![Image](./asset/go-memory/2.png)
+
+Bump Allocator 雖然執行速度快、時間複雜度低，但若是分配過的記憶體被釋放了，這段空的記憶體並不會被重新利用。
+![Image](./asset/go-memory/3.png)
+> 紅色部分是被釋放的記憶體，Bump Allocator 並不會重新使用它
+
+### Free-List Allocator
+Free-List Allocator 在記憶體內部管理一個類似 `Link-List` 的結構，記錄所有空記憶體位址。當程式申請記憶體，他會去遍歷這個 `Link-List`，找出足夠大的記憶體，分配並修改 `Link-List`
+![Image](./asset/go-memory/4.png)
+> 因為分配記憶體時要遍歷整個 `Link-List`，所以時間複雜度為 O(n)
+
+Free-List Allocator 在設計時可以選擇不同的策略，常見的有以下四種
+- **First-Fit**：
+從頭開始遍歷，選擇第一個大於申請大小的記憶體
+- **Next-Fit**：
+從上次遍歷結束的位置開始遍歷，選擇第一個大於申請大小的記憶體
+- **Best-Fit**：
+遍歷整個 `Link-List`，選擇最合適大小的記憶體
+- **Segregated-Fit**：
+將記憶體分成多個 `Link-List`，每個`Link-List`內的記憶體大小都相同。申請記憶體時，先找到滿足條件的 `Link-List`，再開始遍歷
+
+Go語言使用的記憶體分配策略類似第四種 `Segregated-Fit`
+![Image](./asset/go-memory/5.png)
+
+> 這邊將記憶體分成4、8、16、32 byte 的記憶體 `Link-List`，當程式申請 8 byte 大小的記憶體，他會先找到 8 byte `Link-List`，從中分配記憶體
