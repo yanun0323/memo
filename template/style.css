@@ -18,10 +18,6 @@ body {
     user-select: none;
 }
 
-img {
-    margin: 10px 0;
-}
-
 h1,
 h2 {
     word-spacing: -5px;
