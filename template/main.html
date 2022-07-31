@@ -23,7 +23,7 @@
 {{ .CSS }}
 
 <body>
-    <button class="trigger" onclick="ShowSidebar()" onmouseover="ShowSidebar()">
+    <button class="trigger" onclick="ShowSidebar()" onmouseover="ShowSidebar()" onmousedown="ShowSidebar()">
         〉
     </button>
 
@@ -31,7 +31,7 @@
         {{ .Button }}
     </div>
 
-    <div onclick="HideSidebar()" onscroll="HideSidebar()" onpointerdown="HideSidebar()">
+    <div onclick="HideSidebar()" onscroll="HideSidebar()" onmousedown="HideSidebar()">
         <div class="markdown">
             {{ .Body }}
         </div>
