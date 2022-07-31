@@ -119,6 +119,7 @@ button {
     font-weight: 400;
     font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
     margin: 0 auto;
+    z-index: 0;
 }
 
 
@@ -133,6 +134,7 @@ button {
     padding-top: 20%;
     background-color: white;
     opacity: 0;
+    z-index: 9;
 }
 
 .sidebar-base:hover {
