@@ -18,6 +18,11 @@ body {
     user-select: none;
 }
 
+img,
+.markdown {
+    max-width: 800px;
+}
+
 h1,
 h2 {
     word-spacing: -5px;
